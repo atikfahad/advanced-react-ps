@@ -1,0 +1,22 @@
+{
+  "name": "advanced-react-samer-buna",
+  "version": "1.0.0",
+  "description": "Advanced React by Samer Buna - Pluralsight",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atikfahad/advanced-react-ps.git"
+  },
+  "author": "Atik Fahad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atikfahad/advanced-react-ps/issues"
+  },
+  "homepage": "https://github.com/atikfahad/advanced-react-ps#readme"
+}
