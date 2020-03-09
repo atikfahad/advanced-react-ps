@@ -7,15 +7,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
-    "stop": "pm2 stop server"
-  },
-  "babel": {
-    "presets": [
-      "react",
-      "env",
-      "stage-2"
-    ]
+    "dev": "pm2-dev start lib/server.js",
+    "webpack": "webpack -wd",
+    "stop": "pm2 stop server",
+    "status": "pm2 status",
+    "report": "pm2 report"
   },
   "repository": {
     "type": "git",
@@ -30,15 +26,22 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0"
+    "eslint-plugin-react": "^7.19.0",
+    "parcel-bundler": "^1.12.4",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "pm2": "^4.2.3"
+    "pm2": "^4.2.3",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "webpack": "^4.42.0"
   }
 }
